@@ -18,7 +18,7 @@ export class Medicine {
   @Column({ type: 'text', nullable: true })
   sideEffects: string;
 
-  @Column({ type: 'decimal', precision: 10, scale: 2 })
+  @Column({ type: 'int', nullable: true })
   price: number;
 
   @Column({ length: 100, nullable: true })
